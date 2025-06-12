@@ -54,7 +54,7 @@ export default function Footer() {
             <Link href="/" className="inline-block transform hover:scale-105 transition-transform duration-200">
               <Image
                 src="/placeholder.svg?height=40&width=180"
-                alt="GreenSense Billing Logo"
+                alt="BHS Billing Logo"
                 width={180}
                 height={40}
                 className="h-10 w-auto"
