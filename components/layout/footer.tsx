@@ -178,8 +178,8 @@ export default function Footer() {
                 {
                   icon: Mail,
                   title: "Email Us",
-                  content: "info@greensensebilling.com",
-                  href: "mailto:info@greensensebilling.com"
+                  content: "info@bhshealthcares.com",
+                  href: "mailto:info@bhshealthcares.com"
                 },
                 {
                   icon: Clock,
