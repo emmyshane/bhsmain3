@@ -53,7 +53,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block transform hover:scale-105 transition-transform duration-200">
               <Image
-                src="/placeholder.svg?height=40&width=180"
+                src="/BHS-LOGO.png?height=40&width=180"
                 alt="BHS Billing Logo"
                 width={180}
                 height={40}

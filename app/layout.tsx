@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BHS Billing | Medical Billing & Revenue Cycle Management",
     description: "Comprehensive medical billing services for healthcare providers",
-    url: "https://BHSbilling.com",
+    url: "https://bhshealthcares.com",
     siteName: "BHS Billing",
     images: [
       {

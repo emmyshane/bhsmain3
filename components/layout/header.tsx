@@ -147,7 +147,7 @@ export default function Header() {
                 <div className="relative overflow-hidden rounded-lg">
                   <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                   <Image
-                    src="/placeholder.svg?height=40&width=180"
+                    src="/BHS-LOGO.png?height=40&width=180"
                     alt="BHS Billing Logo"
                     width={180}
                     height={40}
@@ -425,7 +425,7 @@ export default function Header() {
                 <div className="relative overflow-hidden rounded-lg">
                   <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/10 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                   <Image
-                    src="/placeholder.svg?height=40&width=180"
+                    src="/BHS-LOGO.png?height=40&width=180"
                     alt="BHS Billing Logo"
                     width={180}
                     height={40}

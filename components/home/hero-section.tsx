@@ -40,10 +40,10 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=500&width=600&text=Medical+Billing+Image"
+              src="/nurse.jpg?height=450&width=500&text=Medical+Billing+Image"
               alt="Medical Billing"
-              width={600}
-              height={500}
+              width={500}
+              height={450}
               className="rounded-lg shadow-xl"
               priority
             />

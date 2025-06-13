@@ -14,15 +14,15 @@ const faqs: FAQ[] = [
     answer: "Outsourcing Revenue Cycle Management (RCM) allows healthcare providers to focus on patient care while professionals handle complex billing tasks. It often results in faster reimbursements, fewer claim denials, and lower administrative costs compared to managing it internally, especially for small to mid-sized practices."
   },
   {
-    question: "How can GreenSense Billing help?",
-    answer: "GreenSense Billing offers end-to-end RCM services, including insurance verification, claims submission, denial management, and payment posting. Our goal is to increase your revenue while reducing overhead by optimizing every step of your billing process."
+    question: "How can BHS Billing help?",
+    answer: "BHS Billing offers end-to-end RCM services, including insurance verification, claims submission, denial management, and payment posting. Our goal is to increase your revenue while reducing overhead by optimizing every step of your billing process."
   },
   {
-    question: "Is GreenSense Billing HIPAA Compliant?",
-    answer: "Yes. GreenSense Billing is fully HIPAA compliant. We implement strict data protection policies, secure communication protocols, and regular staff training to ensure that all patient health information (PHI) is handled with the highest level of security and confidentiality."
+    question: "Is BHS Billing HIPAA Compliant?",
+    answer: "Yes. BHS Billing is fully HIPAA compliant. We implement strict data protection policies, secure communication protocols, and regular staff training to ensure that all patient health information (PHI) is handled with the highest level of security and confidentiality."
   },
   {
-    question: "How does GreenSense Billing determine its prices?",
+    question: "How does BHS Billing determine its prices?",
     answer: "Our pricing is flexible and depends on factors like practice size, specialty, claim volume, and required services. We offer transparent, customized pricing models—usually as a percentage of monthly collections or a flat-rate—ensuring affordability and value."
   },
   {
