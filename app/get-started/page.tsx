@@ -415,10 +415,11 @@ export default function GetStartedPage() {
                           <select
                             id="specialty"
                             name="specialty"
+                            defaultValue=""
                             className="w-full appearance-none pl-12 pr-12 py-4 border-0 rounded-lg bg-transparent text-gray-900 font-medium focus:ring-0 outline-none cursor-pointer text-sm"
                             required
                           >
-                            <option value="" disabled selected className="text-gray-500">Select your medical specialty</option>
+                            <option value="" disabled className="text-gray-500">Select your medical specialty</option>
                             <option value="internal-medicine" className="py-3 text-gray-800">Internal Medicine</option>
                             <option value="family-practice" className="py-3 text-gray-800">Family Practice</option>
                             <option value="pediatrics" className="py-3 text-gray-800">Pediatrics</option>
@@ -459,10 +460,11 @@ export default function GetStartedPage() {
                           <select
                             id="practice-size"
                             name="practice-size"
+                            defaultValue=""
                             className="w-full appearance-none pl-12 pr-12 py-4 border-0 rounded-lg bg-transparent text-gray-900 font-medium focus:ring-0 outline-none cursor-pointer text-sm"
                             required
                           >
-                            <option value="" disabled selected className="text-gray-500">Select your practice size</option>
+                            <option value="" disabled className="text-gray-500">Select your practice size</option>
                             <option value="solo" className="py-3 text-gray-800">Solo Provider (1 Provider)</option>
                             <option value="small" className="py-3 text-gray-800">Small Practice (2-5 Providers)</option>
                             <option value="medium" className="py-3 text-gray-800">Medium Practice (6-10 Providers)</option>
@@ -498,10 +500,11 @@ export default function GetStartedPage() {
                           <select
                             id="services"
                             name="services"
+                            defaultValue=""
                             className="w-full appearance-none pl-12 pr-12 py-4 border-0 rounded-lg bg-transparent text-gray-900 font-medium focus:ring-0 outline-none cursor-pointer text-sm"
                             required
                           >
-                            <option value="" disabled selected className="text-gray-500">Select services you're interested in</option>
+                            <option value="" disabled className="text-gray-500">Select services you're interested in</option>
                             <option value="medical-billing" className="py-3 text-gray-800">Medical Billing & Coding</option>
                             <option value="rcm" className="py-3 text-gray-800">Full Revenue Cycle Management</option>
                             <option value="credentialing" className="py-3 text-gray-800">Provider Credentialing</option>

@@ -41,8 +41,8 @@ export default function Header() {
       
       // Calculate scroll progress for the indicator
       const windowHeight = document.documentElement.scrollHeight - window.innerHeight
-      const scrolled = window.scrollY
-      const progress = (scrolled / windowHeight) * 100
+      const scrollPosition = window.scrollY
+      const progress = (scrollPosition / windowHeight) * 100
       setScrollProgress(progress)
     }
 
