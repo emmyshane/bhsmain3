@@ -375,9 +375,10 @@ export default function GetStartedPage() {
                             id="specialty"
                             name="specialty"
                             className="w-full appearance-none pt-6 pb-2 px-4 border-0 rounded-lg bg-transparent text-gray-900 focus:ring-0 outline-none transition-all group-hover:shadow-sm"
+                            defaultValue=""
                             required
                           >
-                            <option value="" disabled selected></option>
+                            <option value="" disabled></option>
                             <option value="internal-medicine">Internal Medicine</option>
                             <option value="family-practice">Family Practice</option>
                             <option value="pediatrics">Pediatrics</option>
@@ -405,9 +406,10 @@ export default function GetStartedPage() {
                             id="practice-size"
                             name="practice-size"
                             className="w-full appearance-none pt-6 pb-2 px-4 border-0 rounded-lg bg-transparent text-gray-900 focus:ring-0 outline-none transition-all group-hover:shadow-sm"
+                            defaultValue=""
                             required
                           >
-                            <option value="" disabled selected></option>
+                            <option value="" disabled></option>
                             <option value="solo">Solo Provider</option>
                             <option value="small">2-5 Providers</option>
                             <option value="medium">6-10 Providers</option>
@@ -433,9 +435,10 @@ export default function GetStartedPage() {
                             id="services"
                             name="services"
                             className="w-full appearance-none pt-6 pb-2 px-4 border-0 rounded-lg bg-transparent text-gray-900 focus:ring-0 outline-none transition-all group-hover:shadow-sm"
+                            defaultValue=""
                             required
                           >
-                            <option value="" disabled selected></option>
+                            <option value="" disabled></option>
                             <option value="medical-billing">Medical Billing</option>
                             <option value="rcm">Revenue Cycle Management</option>
                             <option value="credentialing">Provider Credentialing</option>
@@ -879,6 +882,7 @@ export default function GetStartedPage() {
               `}</style>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>
