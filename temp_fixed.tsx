@@ -20,10 +20,6 @@ import {
   ChevronDown
 } from "lucide-react"
 
-
-
-
-
 export default function GetStartedPage() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -227,14 +223,6 @@ export default function GetStartedPage() {
         </div>
 
         <div className="container relative z-10">
-          {/* Let's Get Started Section */}
-          <div className={`text-center mb-16 max-w-3xl mx-auto transition-all duration-1000 ease-out transform ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-          }`}>
-            
-            
-          
-
           {/* Form and Testimonials Section */}
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             {/* Form Section - Completely Redesigned */}
@@ -511,63 +499,6 @@ export default function GetStartedPage() {
               }`}
               style={{ transitionDelay: '200ms' }}
             >
-              {/* Let's Get Started Card */}
-              {/* <div className="mb-12 relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#002E3D] to-[#003a4d] p-8 md:p-10 shadow-xl">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-primary/30 rounded-full blur-3xl opacity-20"></div>
-                <div className="absolute bottom-0 left-0 w-40 h-40 bg-primary/20 rounded-full blur-3xl opacity-20"></div>
-                
-                <div className="relative z-10">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center">
-                      <ArrowRight className="h-6 w-6 text-primary-light" />
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">Let's Get Started Today</h3>
-                  
-                  <p className="text-white/80 text-center max-w-2xl mx-auto mb-8">
-                    Our team is ready to help you optimize your billing processes and increase your revenue. 
-                    Fill out the form and we'll contact you within one business day.
-                  </p>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center text-center">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mb-3">
-                        <MessageSquare className="h-5 w-5 text-white" />
-                      </div>
-                      <h4 className="text-white font-medium mb-2">Consultation</h4>
-                      <p className="text-white/70 text-sm">Free initial consultation to understand your needs</p>
-                    </div>
-                    
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center text-center">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mb-3">
-                        <FileText className="h-5 w-5 text-white" />
-                      </div>
-                      <h4 className="text-white font-medium mb-2">Custom Plan</h4>
-                      <p className="text-white/70 text-sm">Tailored solution designed for your practice</p>
-                    </div>
-                    
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center text-center">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mb-3">
-                        <Users className="h-5 w-5 text-white" />
-                      </div>
-                      <h4 className="text-white font-medium mb-2">Implementation</h4>
-                      <p className="text-white/70 text-sm">Seamless onboarding and ongoing support</p>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-8 flex justify-center">
-                    <a 
-                      href="#consultation-form" 
-                      className="inline-flex items-center px-6 py-3 bg-white text-primary font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                    >
-                      Get Started Now
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                  </div>
-                </div>
-              </div> */}
-
               {/* Cloud-like design for Let's Get Started section */}
               <div className="relative mb-10 mt-4">
                 {/* Cloud background */}
@@ -650,7 +581,7 @@ export default function GetStartedPage() {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                     
                     {/* Animated mesh pattern overlay */}
-                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iIzE0YjhhNiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
+                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwID60IDYwIj48cGF0aCBkPSJNMzAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iIzE0YjhhNiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
                     
                     {/* Multi-layered border glow effect */}
                     <div className="absolute inset-0 rounded-xl border border-teal-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -689,7 +620,7 @@ export default function GetStartedPage() {
                         <a href="#consultation-form" className="group/btn relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg overflow-hidden transition-all duration-500 transform hover:scale-105">
                           {/* Button background layers */}
                           <span className="absolute inset-0 bg-gradient-to-r from-teal-600/90 to-teal-500/90 opacity-90 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
+                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAx3LjQgMCAzMHMxMy40IDMwIDMwIDMwIDMwLTEzLjQgMzAtMzBTNDYuNiAwIDMwIDB6bTAgNTNDMTYuOCA1NCA2IDQzLjIgNiAzMFMxNi44IDYgMzAgNnMyNCAxMC44IDI0IDI0LTEwLjggMjQtMjQgMjR6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz48L3N2Zz4=')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
                           
                           {/* Button glow effects */}
                           <span className="absolute inset-0 bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0 opacity-0 group-hover/btn:opacity-100 blur-sm transition-opacity duration-500"></span>
@@ -756,7 +687,7 @@ export default function GetStartedPage() {
                         <a href="#consultation-form" className="group/btn relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg overflow-hidden transition-all duration-500 transform hover:scale-105">
                           {/* Button background layers */}
                           <span className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-500/90 opacity-90 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
+                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZillLW9wYWNpdHk9IjAuMDUiLz48L3N2Zz4=')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
                           
                           {/* Button glow effects */}
                           <span className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-blue-400/40 to-blue-400/0 opacity-0 group-hover/btn:opacity-100 blur-sm transition-opacity duration-500"></span>
@@ -784,7 +715,7 @@ export default function GetStartedPage() {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                     
                     {/* Animated mesh pattern overlay */}
-                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iIzk3MzNlYSIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
+                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My.2IDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iIzk3MzNlYSIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
                     
                     {/* Multi-layered border glow effect */}
                     <div className="absolute inset-0 rounded-xl border border-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -823,7 +754,7 @@ export default function GetStartedPage() {
                         <a href="#consultation-form" className="group/btn relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg overflow-hidden transition-all duration-500 transform hover:scale-105">
                           {/* Button background layers */}
                           <span className="absolute inset-0 bg-gradient-to-r from-purple-600/90 to-purple-500/90 opacity-90 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
+                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAu8IDI0IDI0LTEwLjggMjQtMjQgMjR6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz48L3N2Zz4=')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
                           
                           {/* Button glow effects */}
                           <span className="absolute inset-0 bg-gradient-to-r from-purple-400/0 via-purple-400/40 to-purple-400/0 opacity-0 group-hover/btn:opacity-100 blur-sm transition-opacity duration-500"></span>
@@ -890,7 +821,7 @@ export default function GetStartedPage() {
                         <a href="#consultation-form" className="group/btn relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg overflow-hidden transition-all duration-500 transform hover:scale-105">
                           {/* Button background layers */}
                           <span className="absolute inset-0 bg-gradient-to-r from-amber-600/90 to-amber-500/90 opacity-90 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA2IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
+                          <span className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEMxMy40IDAgMCAxMy40IDAgMzBzMTMuNCAzMCAzMCAzMCAzMC0xMy40IDMwLTMwUzQ2LjYgMCAzMCAwem0wIDU0QzE2LjggNTQgNiA0My4yIDYgMzBTMTYuOCA6IDMwIDZzMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-0 group-hover/btn:opacity-20 transition-opacity duration-500"></span>
                           
                           {/* Button glow effects */}
                           <span className="absolute inset-0 bg-gradient-to-r from-amber-400/0 via-amber-400/40 to-amber-400/0 opacity-0 group-hover/btn:opacity-100 blur-sm transition-opacity duration-500"></span>
@@ -910,6 +841,7 @@ export default function GetStartedPage() {
                     </div>
                   </div>
                 </div>
+              </div>
               
               {/* Add custom CSS for advanced animations */}
               <style jsx global>{`

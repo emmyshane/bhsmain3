@@ -3,9 +3,27 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import { IntegrityIcon, ExcellenceIcon, InnovationIcon, PartnershipIcon } from '../../../components/ui/custom-icons';
 
 const ValuesShowcase = ({ values }) => {
   const router = useRouter();
+  
+  // Helper function to get custom icon based on value title
+  const getCustomIcon = (title) => {
+    const iconProps = { size: 32, className: "text-white" };
+    switch (title) {
+      case 'Integrity':
+        return <IntegrityIcon {...iconProps} />;
+      case 'Excellence':
+        return <ExcellenceIcon {...iconProps} />;
+      case 'Innovation':
+        return <InnovationIcon {...iconProps} />;
+      case 'Partnership':
+        return <PartnershipIcon {...iconProps} />;
+      default:
+        return <IntegrityIcon {...iconProps} />;
+    }
+  };
   const [activeValue, setActiveValue] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -217,9 +235,9 @@ const ValuesShowcase = ({ values }) => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${enhancedValues[activeValue].gradient} text-white text-3xl mb-6 shadow-lg`}
+                  className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${enhancedValues[activeValue].gradient} text-white mb-6 shadow-lg`}
                 >
-                  {enhancedValues[activeValue].icon}
+                  {getCustomIcon(enhancedValues[activeValue].title)}
                 </motion.div>
                 
                 <motion.h3

@@ -1,8 +1,29 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import HeroBanner from "./components/HeroBanner"
 import ValuesShowcase from "./components/ValuesShowcase"
 import AdvantagesShowcase from "./components/AdvantagesShowcase"
+
+export const metadata: Metadata = {
+  title: "About BHS Billing | Expert Medical Billing Team & Company History",
+  description: "Learn about BHS Billing's expert team, mission, and proven track record in medical billing and revenue cycle management. 15+ years serving healthcare providers nationwide.",
+  keywords: "about BHS billing, medical billing company, healthcare billing experts, revenue cycle management team, medical billing experience",
+  alternates: {
+    canonical: "https://bhshealthcares.com/about",
+  },
+  openGraph: {
+    title: "About BHS Billing | Expert Medical Billing Team & Company History",
+    description: "Learn about BHS Billing's expert team, mission, and proven track record in medical billing and revenue cycle management. 15+ years serving healthcare providers nationwide.",
+    url: "https://bhshealthcares.com/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About BHS Billing | Expert Medical Billing Team & Company History",
+    description: "Learn about BHS Billing's expert team, mission, and proven track record in medical billing and revenue cycle management. 15+ years serving healthcare providers nationwide.",
+  },
+}
 
 const team = [
   {
@@ -82,7 +103,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/Our Mission.jpg"
-                  alt="Our mission"
+                  alt="Our mission - Healthcare professionals working together"
                   width={800}
                   height={600}
                   className="w-full h-auto"

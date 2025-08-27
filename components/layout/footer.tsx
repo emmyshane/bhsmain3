@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ChevronRight, ArrowRight, Clock, Shield, CheckCircle } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MapPin, ChevronRight, ArrowRight, Clock, Shield, CheckCircle } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -84,12 +84,12 @@ export default function Footer() {
       {
         icon: Facebook,
         label: "Facebook",
-        link: "https://www.facebook.com/share/16NBZ6gM4n/", // Replace with your actual Facebook URL
+        link: "https://www.facebook.com/share/16NBZ6gM4n/",
       },
       {
         icon: Linkedin,
         label: "LinkedIn",
-        link: "https://www.linkedin.com/company/bhs-healthcare-services/", // Replace with your actual LinkedIn URL
+        link: "https://www.linkedin.com/company/bhs-healthcare-services/",
       },
     ].map((social) => (
       <a
@@ -177,7 +177,11 @@ export default function Footer() {
                 {
                   icon: Mail,
                   title: "Email Us",
-                  content: "info@bhshealthcares.com",
+                  content: (
+                    <span>
+                      info<span style={{display: 'none'}}>nospam</span>@<span style={{display: 'none'}}>nospam</span>bhshealthcares<span style={{display: 'none'}}>nospam</span>.com
+                    </span>
+                  ),
                   href: "mailto:info@bhshealthcares.com"
                 },
                 {
@@ -220,6 +224,25 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </div>
+      
+      {/* Developer Credit Section */}
+      <div className="relative border-t border-white/10 bg-gradient-to-r from-[#001A22] to-[#002E3D]">
+        <div className="container py-4">
+          <div className="text-center">
+            <p className="text-white/60 text-sm">
+              Designed and Developed by{" "}
+              <a
+                href="https://www.reveraforte.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 font-medium transition-colors duration-300 hover:underline"
+              >
+                Revera Forte
+              </a>
+            </p>
           </div>
         </div>
       </div>

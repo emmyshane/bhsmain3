@@ -3,6 +3,14 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import {
+  HealthcareExpertiseIcon,
+  ProvenResultsIcon,
+  TransparentReportingIcon,
+  DedicatedSupportIcon,
+  AdvancedTechnologyIcon,
+  ComplianceFocusIcon
+} from '../../../components/ui/custom-icons';
 
 interface Advantage {
   title: string;
@@ -16,6 +24,27 @@ interface AdvantagesShowcaseProps {
 
 const AdvantagesShowcase = ({ advantages = [] }: AdvantagesShowcaseProps) => {
   const router = useRouter();
+  
+  // Helper function to get custom icon based on advantage title
+  const getCustomIcon = (title: string) => {
+    const iconProps = { size: 24, className: "text-white" };
+    switch (title) {
+      case 'Healthcare Expertise':
+        return <HealthcareExpertiseIcon {...iconProps} />;
+      case 'Proven Results':
+        return <ProvenResultsIcon {...iconProps} />;
+      case 'Transparent Reporting':
+        return <TransparentReportingIcon {...iconProps} />;
+      case 'Dedicated Support':
+        return <DedicatedSupportIcon {...iconProps} />;
+      case 'Advanced Technology':
+        return <AdvancedTechnologyIcon {...iconProps} />;
+      case 'Compliance Focus':
+        return <ComplianceFocusIcon {...iconProps} />;
+      default:
+        return <HealthcareExpertiseIcon {...iconProps} />;
+    }
+  };
   const [activeAdvantage, setActiveAdvantage] = useState(0);
   const [viewMode, setViewMode] = useState('grid'); // 'grid', 'carousel', 'interactive'
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -259,7 +288,7 @@ const AdvantagesShowcase = ({ advantages = [] }: AdvantagesShowcaseProps) => {
                       whileHover={{ rotate: 10, scale: 1.1 }}
                       transition={{ duration: 0.3 }}
                     >
-                      {advantage.icon}
+                      {getCustomIcon(advantage.title)}
                       <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${getColorClasses(advantage.color, 'primary')} blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300`} />
                     </motion.div>
 
@@ -367,8 +396,8 @@ const AdvantagesShowcase = ({ advantages = [] }: AdvantagesShowcaseProps) => {
                   >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                       <div>
-                        <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${getColorClasses(enhancedAdvantages[activeAdvantage].color, 'primary')} flex items-center justify-center text-white text-3xl mb-6 shadow-xl`}>
-                          {enhancedAdvantages[activeAdvantage].icon}
+                        <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${getColorClasses(enhancedAdvantages[activeAdvantage].color, 'primary')} flex items-center justify-center text-white mb-6 shadow-xl`}>
+                          {getCustomIcon(enhancedAdvantages[activeAdvantage].title)}
                         </div>
                         
                         <h3 className="text-4xl font-bold text-gray-900 mb-6">

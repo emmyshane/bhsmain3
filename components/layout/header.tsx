@@ -12,10 +12,15 @@ const navigation = {
       name: "Services",
       href: "/services",
       dropdown: [
-        { name: "Revenue Cycle Management", href: "/services/revenue-cycle-management" },
+        { name: "Revenue Cycle Management Solutions", href: "/services/revenue-cycle-management" },
+        { name: "Medical Coding Services", href: "/services/medical-coding" },
+        { name: "Provider Credentialing", href: "/services/provider-enrollment" },
+        { name: "Claims Processing & Denial Management", href: "/services/accounts-receivable" },
+        { name: "Patient Demographics Verification", href: "/services/patient-demographics" },
+        { name: "Payment Posting Services", href: "/services/payment-posting" },
       ],
     },
-    { name: "About Us", href: "/about" },
+    { name: "About BHS Healthcare", href: "/about" },
   ],
 }
 
@@ -251,7 +256,7 @@ export default function Header() {
                 <Link
                   href="/get-started"
                   className={`
-                    inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white 
+                    inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white
                     bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary
                     rounded-md transition-all duration-300 shadow-md hover:shadow-lg relative overflow-hidden
                     ${isHovering ? 'scale-105' : 'scale-100'}
@@ -262,7 +267,7 @@ export default function Header() {
                 >
                   <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
                   <span className="absolute -inset-1 bg-primary/30 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative z-10 font-semibold">Get Started</span>
+                  <span className="relative z-10 font-semibold">Free Practice Assessment</span>
                   <ArrowRight className={`ml-2 h-4 w-4 transition-transform duration-300 relative z-10 ${isHovering ? 'translate-x-1' : ''}`} />
                 </Link>
               </div>
@@ -513,7 +518,7 @@ export default function Header() {
                     <div className="p-1.5 rounded-full bg-primary/15 mr-2 relative z-10 group-hover:scale-110 transition-transform duration-200">
                       <Calendar className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="group-hover:translate-x-0.5 transition-transform duration-200 relative z-10">Schedule Call</span>
+                    <span className="group-hover:translate-x-0.5 transition-transform duration-200 relative z-10">Free Revenue Assessment</span>
                   </Link>
                 </div>
               </div>
@@ -528,7 +533,7 @@ export default function Header() {
               >
                 <span className="absolute inset-0 w-full h-full bg-white/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
                 <span className="absolute -inset-1 bg-primary/30 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <span className="relative z-10 font-semibold">Get Started</span>
+                <span className="relative z-10 font-semibold">Start Free Assessment</span>
                 <ArrowRight className="ml-2 h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>

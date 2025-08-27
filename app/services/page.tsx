@@ -1,9 +1,28 @@
-"use client"
-
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { BarChart3, User, Stethoscope, Users, CheckSquare, CreditCard, PieChart } from "lucide-react"
 import ServiceCardGrid from "@/components/ui/service-card-grid"
+
+export const metadata: Metadata = {
+  title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
+  description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
+  keywords: "medical billing services, revenue cycle management, provider credentialing, medical coding, payment posting, accounts receivable, eligibility verification",
+  alternates: {
+    canonical: "https://bhshealthcares.com/services",
+  },
+  openGraph: {
+    title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
+    description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
+    url: "https://bhshealthcares.com/services",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
+    description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
+  },
+}
 
 const services = [
   {
@@ -39,7 +58,7 @@ const services = [
     metric: "2X Faster Processing"
   },
   {
-    title: "Eligibility",
+    title: "Eligibility Verification",
     description: "Real-time insurance verification to reduce claim denials and improve cash flow management.",
     icon: CheckSquare,
     link: "/services/eligibility",
@@ -71,9 +90,9 @@ export default function ServicesPage() {
       <section className="bg-primary py-16 md:py-24">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="heading-1 text-white">Our Services</h1>
+            <h1 className="heading-1 text-white">Our Medical Billing Services</h1>
             <p className="mt-6 text-xl text-white/80">
-              Comprehensive medical billing and revenue cycle management solutions tailored to your practice's needs.
+              Comprehensive medical billing and revenue cycle management solutions tailored to your practice's needs. Increase collections and reduce administrative burden.
             </p>
           </div>
         </div>
@@ -87,7 +106,7 @@ export default function ServicesPage() {
               Our Complete Service Suite
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive healthcare revenue cycle management and billing solutions designed to optimize your practice's financial performance.
+              Comprehensive healthcare revenue cycle management and billing solutions designed to optimize your practice's financial performance and streamline operations.
             </p>
           </div>
           
@@ -106,7 +125,7 @@ export default function ServicesPage() {
             <div className="text-center">
               <h2 className="heading-3 text-neutral-900">Not Sure Which Service You Need?</h2>
               <p className="mt-4 text-lg text-neutral-600">
-                Our team of experts can help you determine the best solution for your practice's unique needs.
+                Our team of medical billing experts can help you determine the best solution for your practice's unique needs and challenges.
               </p>
               <div className="mt-8">
                 <Link href="/get-started" className="btn btn-primary">
