@@ -883,7 +883,6 @@ export default function GetStartedPage() {
             </div>
           </div>
         </div>
-        </div>
       </section>
     </>
   )

@@ -1,28 +1,9 @@
-import type { Metadata } from "next"
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { BarChart3, User, Stethoscope, Users, CheckSquare, CreditCard, PieChart } from "lucide-react"
 import ServiceCardGrid from "@/components/ui/service-card-grid"
-
-export const metadata: Metadata = {
-  title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
-  description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
-  keywords: "medical billing services, revenue cycle management, provider credentialing, medical coding, payment posting, accounts receivable, eligibility verification",
-  alternates: {
-    canonical: "https://bhshealthcares.com/services",
-  },
-  openGraph: {
-    title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
-    description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
-    url: "https://bhshealthcares.com/services",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Medical Billing Services | Complete Revenue Cycle Management Solutions",
-    description: "Comprehensive medical billing services including revenue cycle management, provider credentialing, medical coding, and payment posting. 95% success rate and expert support.",
-  },
-}
 
 const services = [
   {

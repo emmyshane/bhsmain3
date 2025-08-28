@@ -254,8 +254,6 @@ const AdvantagesShowcase = ({ advantages = [] }: AdvantagesShowcaseProps) => {
 
         {/* Content based on view mode */}
         <AnimatePresence mode="wait">
-          
-          {/* Grid View */}
           {viewMode === 'grid' && (
             <motion.div
               key="grid"
